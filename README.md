@@ -42,6 +42,7 @@ Make sure you have the following installed:
     ```
 4. Run the TailwindCSS build process:
     ```sh
+    ./install-tailwind
     ./build-tailwind
     ```
 5. Open the `index.html` file in your browser to view the application.

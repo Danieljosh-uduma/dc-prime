@@ -23,6 +23,7 @@ When modifying the code or adding new features, please adhere to the following g
 
 To run the TailwindCSS build process, use the following command:
 ```sh
+./install-tailwind
 ./build-tailwind
 ```
 
