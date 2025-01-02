@@ -18,7 +18,7 @@
 
 :root {
     --background-color: #FEFCFB;
-    --primary-color: #001F54;
+    --primary-color: #073e9c;
     --secondary-color: #8F95D3;
     --gray: #666666;
     --white: #FEFCFB;
@@ -31,3 +31,8 @@ body {
     color: var(--text-color);
 }
 
+
+/* index.html */
+.navlinks>li>a {
+    @apply px-4 py-2 mx-1;
+}
