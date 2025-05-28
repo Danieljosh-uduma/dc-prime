@@ -3,27 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d229b41f14.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/output.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="flex bg-[var(--primary-color)] w-full h-16 text-white font-bold justify-between items-center px-40 uppercase">
+    <header class="flex relative bg-[var(--primary-color)] w-full h-16 text-white text-sm md:text-base font-bold justify-between items-center px-5 md:px-40 uppercase">
         <logo class="flex flex-col h-14 items-center justify-center">
-            <img class="w-16 h-16 -mt-2" src="/assets/images/logo/logo.png" alt="dominion-city logo">
-            <h3 class="-mt-4">dc prime isolo</h3>
+            <img class="w-16 md:h-16 -mt-2 md:-mt-4 md:mb-1 items-center" src="/assets/images/logo/logo.png" alt="dominion-city logo">
+            <h3 class="-mt-4 hidden md:block">dc prime isolo</h3>
         </logo>
         <nav>
-            <ul class="nav-links navlinks flex">
+            <ul class="nav-links navlinks md:flex hidden">
                 <li><a href="">home</a></li>
                 <li><a href="">who we are</a></li>
                 <li><a href="">sermon</a></li>
                 <li><a href="">discipleship class</a></li>
             </ul>
+
+            <nav>
+                <ul class="absolute top-16 left-0 bg-gray-600 text-white w-full h-auto transition-all duration-300 ease-in-out z-30 text-center [&>li]:mb-2 hidden">
+                    <li><a href="">home</a></li>
+                    <li><a href="">who we are</a></li>
+                    <li><a href="">sermon</a></li>
+                    <li><a href="">discipleship class</a></li>
+                </ul>
+            </nav>
         </nav>
-        <div>
-            <button class="bg-[var(--white)] text-[var(--primary-color)] px-2 py-1 rounded-lg uppercase">your giving</button>
+        <div class="flex items-center gap-4">
+            <button class="bg-[var(--white)] text-[var(--primary-color)] px-2 py-1 md:px-6 md:py-3 rounded-lg uppercase">your giving</button>
+            <div class="cursor-pointer md:hidden">
+                <i class="fa-solid fa-bars fa-lg" style="color: #fcfcfd;"></i>
+            </div>
         </div>
+        
     </header>
+    <hero class="flex w-full h-[105vh] bg-gradient-to-b relative from-gray-600 to-gray-700">
+        
+        <div class="w-[23%] h-full absolute md:relative text-white flex justify-end">
+            <div class="w-[75%] pt-32 md:pt-36">
+                <p class="text-xs md:text-base font-bold mb-4 relative w-[300%] z-20">What we envision</p>
+                <h2 class="relative w-[500%] md:w-[160%] z-20 text-4xl md:text-6xl font-bold leading-10 md:leading-[5rem] mb-12 md:mb-16">Raising Godly Youths For Christ </h2>
+                <p class="text-xs md:text-base font-bold leading-5 md:leading-6 w-[350%] md:w-[120%] relative z-20 mb-16">we envision raising Godly youths for Christ, disciplined to go into all sphere of the world with the power of GOD.</p>
+
+                <div class="relative w-[400%] md:w-[150%] flex z-20 btn font-bold items-center text-center text-sm md:text-lg uppercase text-white">
+                    <a href="" class="bg-[var(--primary-color)] px-4 py-2 rounded-lg mr-5 md:mr-10">who we are</a>
+                    <a href="" class="bg-[rgba(0,0,0,0.2)] px-4 py-2 rounded-lg border-2 border-[var(--white)]">latest sermon</a>
+                </div>
+            </div>
+        
+
+        </div>
+        <div class="grid grid-cols-1 grid-rows-1 w-[100%] md:w-[78%] h-full">
+            <div class="col-start-1 row-start-1 bg-[rgba(0,0,0,0.6)] md:bg-[rgba(0,0,0,0.2)] z-10"></div>
+            <img src="/assets/images/index/hero.png" alt="financial breaktthrough flier" loading="lazy" class="col-start-1 row-start-1 w-full h-full object-cover object-center z-0">
+            <!-- <div class="bg-[rgba(0,0,0,0.2)] h-full w-full">overlay</div> -->
+        </div>
+    </hero>
     
 </body>
 </html>
